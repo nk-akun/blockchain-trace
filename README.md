@@ -87,7 +87,14 @@ docker tag hyperledger/fabric-couchdb:0.4.10 hyperledger/fabric-couchdb
 
 > ./start.sh
 
-此处会安装可能会出现问题，具体问题可以百度，
+此处会安装可能会出现问题，具体问题可以百度
+
+参考：
+
+```
+https://blog.csdn.net/liqiang458473/article/details/80908919
+https://blog.csdn.net/wzygis/article/details/85158859
+```
 
 ### 5.运行 webapp 目录下的./start.sh
 
