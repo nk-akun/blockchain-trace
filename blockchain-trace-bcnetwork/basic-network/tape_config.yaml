@@ -6,26 +6,26 @@ peer1: &peer1
   org: org1
   #tls_ca_cert: ./organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
 
-# peer2: &peer2
-#   addr: localhost:8051
-#   org: org2
-#   ssl_target_name_override: peer0.org2.trace.com
-#   tls_ca_cert: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/peers/peer0.org2.trace.com/tls/ca.crt
+peer2: &peer2
+  addr: localhost:8051
+  org: org2
+  # ssl_target_name_override: peer0.org2.trace.com
+  # tls_ca_cert: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/peers/peer0.org2.trace.com/tls/ca.crt
 
-# peer3: &peer3
-#   addr: localhost:9051
-#   org: org3
-#   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
+peer3: &peer3
+  addr: localhost:9051
+  org: org3
+  #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
-# peer4: &peer4
-#   addr: localhost:10051
-#   org: org4
-#   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
+peer4: &peer4
+  addr: localhost:10051
+  org: org4
+  #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
-# peer5: &peer5
-#   addr: localhost:11051
-#   org: org5
-#tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
+peer5: &peer5
+  addr: localhost:11051
+  org: org5
+tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
 orderer1: &orderer1
   addr: localhost:7050
@@ -43,7 +43,7 @@ committers:
 # we might support multi-committer in the future for more complex test scenario.
 # i.e. consider tx committed only if it's done on >50% of nodes.
 # Give your commit Threshold as numbers for peers here.
-commitThreshold: 2
+commitThreshold: 1
 
 # orderer Nodes to interact with
 orderer: *orderer1
