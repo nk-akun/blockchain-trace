@@ -35,7 +35,6 @@ policyFile: ./andLogic.rego
 # Peer Nodes to interact with as endorsement Peers
 endorsers:
   - *peer1
-  - *peer2
 
 # Peer Nodes to interact with as Commit Peers as listening
 committers:
