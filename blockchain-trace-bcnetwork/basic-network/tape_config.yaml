@@ -9,7 +9,8 @@ peer1: &peer1
 peer2: &peer2
   addr: localhost:8051
   org: org2
-  #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
+  ssl_target_name_override: peer0.org2.trace.com
+  tls_ca_cert: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/peers/peer0.org2.trace.com/tls/ca.crt
 
 peer3: &peer3
   addr: localhost:9051
@@ -39,7 +40,6 @@ endorsers:
 # Peer Nodes to interact with as Commit Peers as listening
 committers:
   - *peer1
-  - *peer2
 # we might support multi-committer in the future for more complex test scenario.
 # i.e. consider tx committed only if it's done on >50% of nodes.
 # Give your commit Threshold as numbers for peers here.
