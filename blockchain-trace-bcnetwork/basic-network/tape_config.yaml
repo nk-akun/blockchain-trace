@@ -27,7 +27,7 @@ peer5: &peer5
   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
 orderer1: &orderer1
-  addr: orderer.trace.com:7050
+  addr: localhost:7050
   #tls_ca_cert: ./organizations/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 
 policyFile: ./andLogic.rego
