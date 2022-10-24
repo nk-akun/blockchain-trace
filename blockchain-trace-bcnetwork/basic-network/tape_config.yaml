@@ -68,8 +68,8 @@ args:
 mspid: Org1MSP
 #private_key: ./organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/priv_sk
 #sign_cert: ./organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem
-private_key: /Users/marathon/Work/mygo/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/keystore/5e0b4ed6728b3e83577b4a6460c479c40468e44125b70e964f0c11d9630dc1e0_sk
-sign_cert: /Users/marathon/Work/mygo/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/signcerts/Admin@org1.trace.com-cert.pem
+private_key: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/keystore/5e0b4ed6728b3e83577b4a6460c479c40468e44125b70e964f0c11d9630dc1e0_sk
+sign_cert: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/signcerts/Admin@org1.trace.com-cert.pem
 # network traffic control
 num_of_conn: 10
 client_per_conn: 10
