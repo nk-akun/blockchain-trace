@@ -2,23 +2,28 @@
 # addr address for node
 # tls_ca_cert tls cert
 peer1: &peer1
-  addr: peer0.org1.trace.com:7051
+  addr: localhost:7051
+  org: org1
   #tls_ca_cert: ./organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
 
 peer2: &peer2
-  addr: peer0.org2.trace.com:7051
+  addr: localhost:8051
+  org: org2
   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
 peer3: &peer3
-  addr: peer0.org3.trace.com:7051
+  addr: localhost:9051
+  org: org3
   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
 peer4: &peer4
-  addr: peer0.org4.trace.com:7051
+  addr: localhost:10051
+  org: org4
   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
 peer5: &peer5
-  addr: peer0.org5.trace.com:7051
+  addr: localhost:11051
+  org: org5
   #tls_ca_cert: ./organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
 
 orderer1: &orderer1
