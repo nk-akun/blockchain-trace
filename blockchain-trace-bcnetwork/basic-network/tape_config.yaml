@@ -36,10 +36,12 @@ policyFile: ./andLogic.rego
 # Peer Nodes to interact with as endorsement Peers
 endorsers:
   - *peer1
+  - *peer2
 
 # Peer Nodes to interact with as Commit Peers as listening
 committers:
   - *peer1
+  - *peer2
 # we might support multi-committer in the future for more complex test scenario.
 # i.e. consider tx committed only if it's done on >50% of nodes.
 # Give your commit Threshold as numbers for peers here.
