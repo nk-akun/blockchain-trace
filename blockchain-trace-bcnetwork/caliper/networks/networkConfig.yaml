@@ -74,7 +74,7 @@ clients:
         path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/signcerts/Admin@org5.trace.com-cert.pem
 
 channels:
-  amops:
+  tracechannel:
     created: true
     orderers:
       - orderer.trace.com
