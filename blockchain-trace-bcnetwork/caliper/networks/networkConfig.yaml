@@ -95,7 +95,7 @@ channels:
         version: "1.0"
 
 organizations:
-  Org1:
+  org1:
     mspid: Org1MSP
     peers:
       - peer0.org1.trace.com
@@ -106,7 +106,7 @@ organizations:
     signedCert:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/signcerts/Admin@org1.trace.com-cert.pem
 
-  Org2:
+  org2:
     mspid: Org2MSP
     peers:
       - peer0.org2.trace.com
@@ -117,7 +117,7 @@ organizations:
     signedCert:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/signcerts/Admin@org2.trace.com-cert.pem
 
-  Org3:
+  org2:
     mspid: Org3MSP
     peers:
       - peer0.org3.trace.com
@@ -128,7 +128,7 @@ organizations:
     signedCert:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/signcerts/Admin@org3.trace.com-cert.pem
 
-  Org4:
+  org4:
     mspid: Org4MSP
     peers:
       - peer0.org4.trace.com
@@ -139,7 +139,7 @@ organizations:
     signedCert:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/signcerts/Admin@org4.trace.com-cert.pem
 
-  Org5:
+  org5:
     mspid: Org5MSP
     peers:
       - peer0.org5.trace.com
