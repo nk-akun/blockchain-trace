@@ -76,7 +76,7 @@ class CreateSubsidyWorkload extends WorkloadModuleBase {
 
     let name = driverName[driverIdx];
     let chineseName = driverChineseName[driverIdx];
-    let phone = phoneNumber[phoneNumber];
+    let phone = phoneNumber[driverIdx];
     let department = "运输部";
     let updateDate = date[Math.floor(Math.random() * date.length)];
     let logisticsId = long[Math.floor(Math.random() * long.length)];
