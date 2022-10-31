@@ -25,53 +25,53 @@ clients:
       clientSignedCert:
         path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/signcerts/Admin@org1.trace.com-cert.pem
 
-  Admin@org2.trace.com:
-    client:
-      organization: org2
-      credentialStore:
-        path: /tmp/org2
-        cryptoStore:
-          path: /tmp/org2
-      clientPrivateKey:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/keystore/94000312249d103a41c974b0c00b99d9cc579d4184490e1eeaf85e793ba940f6_sk
-      clientSignedCert:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/signcerts/Admin@org2.trace.com-cert.pem
+  # Admin@org2.trace.com:
+  #   client:
+  #     organization: org2
+  #     credentialStore:
+  #       path: /tmp/org2
+  #       cryptoStore:
+  #         path: /tmp/org2
+  #     clientPrivateKey:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/keystore/94000312249d103a41c974b0c00b99d9cc579d4184490e1eeaf85e793ba940f6_sk
+  #     clientSignedCert:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/signcerts/Admin@org2.trace.com-cert.pem
 
-  Admin@org3.trace.com:
-    client:
-      organization: org3
-      credentialStore:
-        path: /tmp/org3
-        cryptoStore:
-          path: /tmp/org3
-      clientPrivateKey:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/keystore/7c086268307415636ab48277025963cc68d3c43c73c6419b005cb24560d5c52e_sk
-      clientSignedCert:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/signcerts/Admin@org3.trace.com-cert.pem
+  # Admin@org3.trace.com:
+  #   client:
+  #     organization: org3
+  #     credentialStore:
+  #       path: /tmp/org3
+  #       cryptoStore:
+  #         path: /tmp/org3
+  #     clientPrivateKey:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/keystore/7c086268307415636ab48277025963cc68d3c43c73c6419b005cb24560d5c52e_sk
+  #     clientSignedCert:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/signcerts/Admin@org3.trace.com-cert.pem
 
-  Admin@org4.trace.com:
-    client:
-      organization: org4
-      credentialStore:
-        path: /tmp/org4
-        cryptoStore:
-          path: /tmp/org4
-      clientPrivateKey:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/keystore/53fbcbc782d4dbe78bc7061496ee4f01727c0a120c555303bded52effe498b71_sk
-      clientSignedCert:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/signcerts/Admin@org4.trace.com-cert.pem
+  # Admin@org4.trace.com:
+  #   client:
+  #     organization: org4
+  #     credentialStore:
+  #       path: /tmp/org4
+  #       cryptoStore:
+  #         path: /tmp/org4
+  #     clientPrivateKey:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/keystore/53fbcbc782d4dbe78bc7061496ee4f01727c0a120c555303bded52effe498b71_sk
+  #     clientSignedCert:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/signcerts/Admin@org4.trace.com-cert.pem
 
-  Admin@org5.trace.com:
-    client:
-      organization: org5
-      credentialStore:
-        path: /tmp/org5
-        cryptoStore:
-          path: /tmp/org5
-      clientPrivateKey:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/keystore/a059b9c092dfbd77e015370721a58f542cf07d7f9a5a76c759b1922d958035e0_sk
-      clientSignedCert:
-        path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/signcerts/Admin@org5.trace.com-cert.pem
+  # Admin@org5.trace.com:
+  #   client:
+  #     organization: org5
+  #     credentialStore:
+  #       path: /tmp/org5
+  #       cryptoStore:
+  #         path: /tmp/org5
+  #     clientPrivateKey:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/keystore/a059b9c092dfbd77e015370721a58f542cf07d7f9a5a76c759b1922d958035e0_sk
+  #     clientSignedCert:
+  #       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/signcerts/Admin@org5.trace.com-cert.pem
 
 channels:
   tracechannel:
@@ -81,14 +81,14 @@ channels:
     peers:
       peer0.org1.trace.com:
         eventSource: true
-      peer0.org2.trace.com:
-        eventSource: true
-      peer0.org3.trace.com:
-        eventSource: true
-      peer0.org4.trace.com:
-        eventSource: true
-      peer0.org5.trace.com:
-        eventSource: true
+      # peer0.org2.trace.com:
+      #   eventSource: true
+      # peer0.org3.trace.com:
+      #   eventSource: true
+      # peer0.org4.trace.com:
+      #   eventSource: true
+      # peer0.org5.trace.com:
+      #   eventSource: true
 
     contracts:
       - id: drivercc
@@ -106,49 +106,49 @@ organizations:
     signedCert:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/users/Admin@org1.trace.com/msp/signcerts/Admin@org1.trace.com-cert.pem
 
-  org2:
-    mspid: Org2MSP
-    peers:
-      - peer0.org2.trace.com
-    certificateAuthorities:
-      - ca.trace.com
-    adminPrivateKey:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/keystore/94000312249d103a41c974b0c00b99d9cc579d4184490e1eeaf85e793ba940f6_sk
-    signedCert:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/signcerts/Admin@org2.trace.com-cert.pem
+  # org2:
+  #   mspid: Org2MSP
+  #   peers:
+  #     - peer0.org2.trace.com
+  #   certificateAuthorities:
+  #     - ca.trace.com
+  #   adminPrivateKey:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/keystore/94000312249d103a41c974b0c00b99d9cc579d4184490e1eeaf85e793ba940f6_sk
+  #   signedCert:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/signcerts/Admin@org2.trace.com-cert.pem
 
-  org3:
-    mspid: Org3MSP
-    peers:
-      - peer0.org3.trace.com
-    certificateAuthorities:
-      - ca.trace.com
-    adminPrivateKey:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/keystore/7c086268307415636ab48277025963cc68d3c43c73c6419b005cb24560d5c52e_sk
-    signedCert:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/signcerts/Admin@org3.trace.com-cert.pem
+  # org3:
+  #   mspid: Org3MSP
+  #   peers:
+  #     - peer0.org3.trace.com
+  #   certificateAuthorities:
+  #     - ca.trace.com
+  #   adminPrivateKey:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/keystore/7c086268307415636ab48277025963cc68d3c43c73c6419b005cb24560d5c52e_sk
+  #   signedCert:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/users/Admin@org3.trace.com/msp/signcerts/Admin@org3.trace.com-cert.pem
 
-  org4:
-    mspid: Org4MSP
-    peers:
-      - peer0.org4.trace.com
-    certificateAuthorities:
-      - ca.trace.com
-    adminPrivateKey:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/keystore/53fbcbc782d4dbe78bc7061496ee4f01727c0a120c555303bded52effe498b71_sk
-    signedCert:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/signcerts/Admin@org4.trace.com-cert.pem
+  # org4:
+  #   mspid: Org4MSP
+  #   peers:
+  #     - peer0.org4.trace.com
+  #   certificateAuthorities:
+  #     - ca.trace.com
+  #   adminPrivateKey:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/keystore/53fbcbc782d4dbe78bc7061496ee4f01727c0a120c555303bded52effe498b71_sk
+  #   signedCert:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/users/Admin@org4.trace.com/msp/signcerts/Admin@org4.trace.com-cert.pem
 
-  org5:
-    mspid: Org5MSP
-    peers:
-      - peer0.org5.trace.com
-    certificateAuthorities:
-      - ca.trace.com
-    adminPrivateKey:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/keystore/a059b9c092dfbd77e015370721a58f542cf07d7f9a5a76c759b1922d958035e0_sk
-    signedCert:
-      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/signcerts/Admin@org5.trace.com-cert.pem
+  # org5:
+  #   mspid: Org5MSP
+  #   peers:
+  #     - peer0.org5.trace.com
+  #   certificateAuthorities:
+  #     - ca.trace.com
+  #   adminPrivateKey:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/keystore/a059b9c092dfbd77e015370721a58f542cf07d7f9a5a76c759b1922d958035e0_sk
+  #   signedCert:
+  #     path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/users/Admin@org5.trace.com/msp/signcerts/Admin@org5.trace.com-cert.pem
 
 orderers:
   orderer.trace.com:
@@ -167,37 +167,37 @@ peers:
     # tlsCACerts:
     #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/msp/tlscacerts/tlsca.org1.trace.com-cert.pem
 
-  peer0.org2.trace.com:
-    url: grpc://0.0.0.0:8051
-    grpcOptions:
-      ssl-target-name-override: peer0.org2.trace.com
-      grpc.keepalive_time_ms: 600000
-    # tlsCACerts:
-    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/msp/tlscacerts/tlsca.org2.trace.com-cert.pem
+  # peer0.org2.trace.com:
+  #   url: grpc://0.0.0.0:8051
+  #   grpcOptions:
+  #     ssl-target-name-override: peer0.org2.trace.com
+  #     grpc.keepalive_time_ms: 600000
+  #   # tlsCACerts:
+  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/msp/tlscacerts/tlsca.org2.trace.com-cert.pem
 
-  peer0.org3.trace.com:
-    url: grpc://0.0.0.0:9051
-    grpcOptions:
-      ssl-target-name-override: peer0.org3.trace.com
-      grpc.keepalive_time_ms: 600000
-    # tlsCACerts:
-    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/msp/tlscacerts/tlsca.org3.trace.com-cert.pem
+  # peer0.org3.trace.com:
+  #   url: grpc://0.0.0.0:9051
+  #   grpcOptions:
+  #     ssl-target-name-override: peer0.org3.trace.com
+  #     grpc.keepalive_time_ms: 600000
+  #   # tlsCACerts:
+  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/msp/tlscacerts/tlsca.org3.trace.com-cert.pem
 
-  peer0.org4.trace.com:
-    url: grpc://0.0.0.0:10051
-    grpcOptions:
-      ssl-target-name-override: peer0.org4.trace.com
-      grpc.keepalive_time_ms: 600000
-    # tlsCACerts:
-    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/msp/tlscacerts/tlsca.org4.trace.com-cert.pem
+  # peer0.org4.trace.com:
+  #   url: grpc://0.0.0.0:10051
+  #   grpcOptions:
+  #     ssl-target-name-override: peer0.org4.trace.com
+  #     grpc.keepalive_time_ms: 600000
+  #   # tlsCACerts:
+  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/msp/tlscacerts/tlsca.org4.trace.com-cert.pem
 
-  peer0.org5.trace.com:
-    url: grpc://0.0.0.0:11051
-    grpcOptions:
-      ssl-target-name-override: peer0.org5.trace.com
-      grpc.keepalive_time_ms: 600000
-    # tlsCACerts:
-    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/msp/tlscacerts/tlsca.org5.trace.com-cert.pem
+  # peer0.org5.trace.com:
+  #   url: grpc://0.0.0.0:11051
+  #   grpcOptions:
+  #     ssl-target-name-override: peer0.org5.trace.com
+  #     grpc.keepalive_time_ms: 600000
+  #   # tlsCACerts:
+  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/msp/tlscacerts/tlsca.org5.trace.com-cert.pem
 
 certificateAuthorities:
   ca.trace.com:
