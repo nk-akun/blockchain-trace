@@ -1,6 +1,6 @@
 name: Fabric
 version: "1.0"
-mutual-tls: true
+mutual-tls: false
 
 caliper:
   blockchain: fabric
