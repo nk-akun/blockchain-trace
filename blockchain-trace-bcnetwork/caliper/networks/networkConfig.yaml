@@ -117,7 +117,7 @@ organizations:
     signedCert:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/users/Admin@org2.trace.com/msp/signcerts/Admin@org2.trace.com-cert.pem
 
-  org2:
+  org3:
     mspid: Org3MSP
     peers:
       - peer0.org3.trace.com
