@@ -155,8 +155,8 @@ orderers:
     url: grpcs://0.0.0.0:7050
     grpcOptions:
       ssl-target-name-override: orderer.trace.com
-    # tlsCACerts:
-    # path: ../amops/multiple-deployment/crypto-config/ordererOrganizations/amops.com/orderers/agridepartorderer.amops.com/msp/tlscacerts/tlsca.amops.com-cert.pem
+    tlsCACerts:
+      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/ordererOrganizations/trace.com/msp/tlscacerts/tlsca.trace.com-cert.pem
 
 peers:
   peer0.org1.trace.com:
