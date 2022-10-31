@@ -152,7 +152,7 @@ organizations:
 
 orderers:
   orderer.trace.com:
-    url: grpcs://0.0.0.0:7050
+    url: grpc://0.0.0.0:7050
     grpcOptions:
       ssl-target-name-override: orderer.trace.com
     tlsCACerts:
@@ -160,7 +160,7 @@ orderers:
 
 peers:
   peer0.org1.trace.com:
-    url: grpcs://0.0.0.0:7051
+    url: grpc://0.0.0.0:7051
     grpcOptions:
       ssl-target-name-override: peer0.org1.trace.com
       grpc.keepalive_time_ms: 600000
@@ -168,7 +168,7 @@ peers:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/msp/tlscacerts/tlsca.org1.trace.com-cert.pem
 
   peer0.org2.trace.com:
-    url: grpcs://0.0.0.0:8051
+    url: grpc://0.0.0.0:8051
     grpcOptions:
       ssl-target-name-override: peer0.org2.trace.com
       grpc.keepalive_time_ms: 600000
@@ -176,7 +176,7 @@ peers:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/msp/tlscacerts/tlsca.org2.trace.com-cert.pem
 
   peer0.org3.trace.com:
-    url: grpcs://0.0.0.0:9051
+    url: grpc://0.0.0.0:9051
     grpcOptions:
       ssl-target-name-override: peer0.org3.trace.com
       grpc.keepalive_time_ms: 600000
@@ -184,7 +184,7 @@ peers:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/msp/tlscacerts/tlsca.org3.trace.com-cert.pem
 
   peer0.org4.trace.com:
-    url: grpcs://0.0.0.0:10051
+    url: grpc://0.0.0.0:10051
     grpcOptions:
       ssl-target-name-override: peer0.org4.trace.com
       grpc.keepalive_time_ms: 600000
@@ -192,7 +192,7 @@ peers:
       path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/msp/tlscacerts/tlsca.org4.trace.com-cert.pem
 
   peer0.org5.trace.com:
-    url: grpcs://0.0.0.0:11051
+    url: grpc://0.0.0.0:11051
     grpcOptions:
       ssl-target-name-override: peer0.org5.trace.com
       grpc.keepalive_time_ms: 600000
@@ -201,7 +201,7 @@ peers:
 
 certificateAuthorities:
   ca.trace.com:
-    url: https://0.0.0.0:7054
+    url: http://0.0.0.0:7054
     httpOptions:
       verify: true
     tlsCACerts:
