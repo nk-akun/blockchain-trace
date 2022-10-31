@@ -204,8 +204,8 @@ certificateAuthorities:
     url: https://0.0.0.0:7054
     httpOptions:
       verify: true
-    # tlsCACerts:
-    # path: ../amops/multiple-deployment/crypto-config/peerOrganizations/agridepart.amops.com/ca/ca.agridepart.amops.com-cert.pem
+    tlsCACerts:
+      path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/ca/ca.org1.trace.com-cert.pem
     registrar:
       - enrollId: admin
         enrollSecret: adminpw
