@@ -86,6 +86,9 @@ class CreateSubsidyWorkload extends WorkloadModuleBase {
       contractId: "drivercc",
       contractVersion: "1.0",
       contractFunction: "createTransport",
+      invokerIdentity: "peer0.org1.trace.com",
+      invokerMspId: "Org1MSP",
+      targetPeers: "peer0.org1.trace.com",
       contractArguments: [
         randId,
         randId,
