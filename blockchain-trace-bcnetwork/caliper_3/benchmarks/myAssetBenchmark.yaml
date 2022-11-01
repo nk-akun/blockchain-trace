@@ -1,0 +1,27 @@
+test:
+  name: drivercc-benchmark
+  description: amops benchmark
+  workers:
+    type: local
+    number: 5
+  rounds:
+    - label: createTransport
+      description: create transport
+      txNumber: 5
+      rateControl:
+        type: fixed-load
+        opts:
+          tps: 50
+      callback: workload/createTransport.js
+      # workload:
+      #   module: workload/createTransport.js
+      #   arguments:
+      #     contractId: drivercc
+
+monitors:
+  resource:
+    - module: docker
+      options:
+        interval: 5
+        containers:
+          - all
