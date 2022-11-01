@@ -167,37 +167,37 @@ peers:
     # tlsCACerts:
     #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org1.trace.com/msp/tlscacerts/tlsca.org1.trace.com-cert.pem
 
-  # peer0.org2.trace.com:
-  #   url: grpc://localhost:8051
-  #   grpcOptions:
-  #     ssl-target-name-override: peer0.org2.trace.com
-  #     grpc.keepalive_time_ms: 600000
-  #   # tlsCACerts:
-  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/msp/tlscacerts/tlsca.org2.trace.com-cert.pem
+  peer0.org2.trace.com:
+    url: grpc://localhost:8051
+    grpcOptions:
+      ssl-target-name-override: peer0.org2.trace.com
+      grpc.keepalive_time_ms: 600000
+    # tlsCACerts:
+    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org2.trace.com/msp/tlscacerts/tlsca.org2.trace.com-cert.pem
 
-  # peer0.org3.trace.com:
-  #   url: grpc://localhost:9051
-  #   grpcOptions:
-  #     ssl-target-name-override: peer0.org3.trace.com
-  #     grpc.keepalive_time_ms: 600000
-  #   # tlsCACerts:
-  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/msp/tlscacerts/tlsca.org3.trace.com-cert.pem
+  peer0.org3.trace.com:
+    url: grpc://localhost:9051
+    grpcOptions:
+      ssl-target-name-override: peer0.org3.trace.com
+      grpc.keepalive_time_ms: 600000
+    # tlsCACerts:
+    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org3.trace.com/msp/tlscacerts/tlsca.org3.trace.com-cert.pem
 
-  # peer0.org4.trace.com:
-  #   url: grpc://localhost:10051
-  #   grpcOptions:
-  #     ssl-target-name-override: peer0.org4.trace.com
-  #     grpc.keepalive_time_ms: 600000
-  #   # tlsCACerts:
-  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/msp/tlscacerts/tlsca.org4.trace.com-cert.pem
+  peer0.org4.trace.com:
+    url: grpc://localhost:10051
+    grpcOptions:
+      ssl-target-name-override: peer0.org4.trace.com
+      grpc.keepalive_time_ms: 600000
+    # tlsCACerts:
+    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org4.trace.com/msp/tlscacerts/tlsca.org4.trace.com-cert.pem
 
-  # peer0.org5.trace.com:
-  #   url: grpc://localhost:11051
-  #   grpcOptions:
-  #     ssl-target-name-override: peer0.org5.trace.com
-  #     grpc.keepalive_time_ms: 600000
-  #   # tlsCACerts:
-  #   #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/msp/tlscacerts/tlsca.org5.trace.com-cert.pem
+  peer0.org5.trace.com:
+    url: grpc://localhost:11051
+    grpcOptions:
+      ssl-target-name-override: peer0.org5.trace.com
+      grpc.keepalive_time_ms: 600000
+    # tlsCACerts:
+    #   path: /root/work/repos/gorepos/src/github.com/nk-akun/blockchain-trace/blockchain-trace-bcnetwork/basic-network/crypto-config/peerOrganizations/org5.trace.com/msp/tlscacerts/tlsca.org5.trace.com-cert.pem
 
 certificateAuthorities:
   ca.trace.com:
