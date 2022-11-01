@@ -80,17 +80,17 @@ channels:
       - orderer.trace.com
     peers:
       peer0.org1.trace.com:
-        eventSource: true
+        eventSource: false
       peer0.org2.trace.com:
-        eventSource: true
-      peer0.org3.trace.com:
-        eventSource: true
-      peer0.org4.trace.com:
-        eventSource: true
-      peer0.org5.trace.com:
-        eventSource: true
+        eventSource: false
+      # peer0.org3.trace.com:
+      #   eventSource: true
+      # peer0.org4.trace.com:
+      #   eventSource: true
+      # peer0.org5.trace.com:
+      #   eventSource: true
 
-    contracts:
+    chaincodes:
       - id: drivercc
         version: "1.0"
 

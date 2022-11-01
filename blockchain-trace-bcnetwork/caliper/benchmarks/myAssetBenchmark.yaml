@@ -7,7 +7,7 @@ test:
   rounds:
     - label: createTransport
       description: create transport
-      txNumber: 100
+      txNumber: 20
       rateControl:
         type: fixed-load
         opts:
