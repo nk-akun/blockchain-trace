@@ -85,7 +85,6 @@ module.exports.run = async () => {
 
   let args = {
     chaincodeFunction: "createTransport",
-    invokerIdentity: "peer0.org1.trace.com",
     chaincodeArguments: [
       randId,
       randId,
