@@ -90,9 +90,9 @@ channels:
       peer0.org5.trace.com:
         eventSource: true
 
-    # chaincodes:
-    #   - id: drivercc
-    #     version: "1.0"
+    contracts:
+      - id: drivercc
+        version: "1.0"
 
 organizations:
   Org1:
