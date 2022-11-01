@@ -9,7 +9,7 @@ test:
       description: create transport
       txNumber: 5
       rateControl:
-        type: fixed-load
+        type: fixed-rate
         opts:
           tps: 50
       callback: workload/createTransport.js
