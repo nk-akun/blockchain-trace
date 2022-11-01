@@ -1,6 +1,8 @@
 "use strict";
 
-const { WorkloadModuleBase } = require("@hyperledger/caliper-core");
+const logger = require("@hyperledger/caliper-core").CaliperUtils.getLogger(
+  "my-module"
+);
 
 const driverName = [
   "chenliang",
@@ -51,68 +53,58 @@ const long = [
   "9291928328347474727",
 ];
 
-/**
- * Workload module for the benchmark round.
- */
-class CreateSubsidyWorkload extends WorkloadModuleBase {
-  /**
-   * Initializes the workload module instance.
-   */
-  constructor() {
-    super();
-    this.txIndex = 0;
-  }
-
-  /**
-   * Assemble TXs for the round.
-   * @return {Promise<TxStatus[]>}
-   */
-  async submitTransaction() {
-    this.txIndex++;
-    let randId =
-      "Client" + this.workerIndex + "_SUBSIDY" + this.txIndex.toString();
-
-    let driverIdx = Math.floor(Math.random() * driverName.length);
-
-    let name = driverName[driverIdx];
-    let chineseName = driverChineseName[driverIdx];
-    let phone = phoneNumber[driverIdx];
-    let department = "运输部";
-    let updateDate = date[Math.floor(Math.random() * date.length)];
-    let logisticsId = long[Math.floor(Math.random() * long.length)];
-    let latitude = "中途定位";
-
-    let args = {
-      contractId: "drivercc",
-      contractVersion: "1.0",
-      contractFunction: "createTransport",
-      invokerIdentity: "peer0.org1.trace.com",
-      invokerMspId: "Org1MSP",
-      contractArguments: [
-        randId,
-        randId,
-        name,
-        chineseName,
-        phone,
-        department,
-        updateDate,
-        "",
-        logisticsId,
-        latitude,
-      ],
-      timeout: 30,
-    };
-
-    await this.sutAdapter.sendRequests(args);
-  }
-}
+// save the objects during init
+let bc, contx, txIndex;
 
 /**
- * Create a new instance of the workload module.
- * @return {WorkloadModuleInterface}
+ * Initializes the workload module before the start of the round.
+ * @param {BlockchainInterface} blockchain The SUT adapter instance.
+ * @param {object} context The SUT-specific context for the round.
+ * @param {object} args The user-provided arguments for the workload module.
  */
-function createWorkloadModule() {
-  return new CreateSubsidyWorkload();
-}
+module.exports.init = async (blockchain, context, args) => {
+  bc = blockchain;
+  contx = context;
+  txIndex = 0;
+  logger.debug("Initialized workload module");
+};
 
-module.exports.createWorkloadModule = createWorkloadModule;
+module.exports.run = async () => {
+  txIndex++;
+  let randId = "Client" + this.workerIndex + "_SUBSIDY" + txIndex.toString();
+
+  let driverIdx = Math.floor(Math.random() * driverName.length);
+
+  let name = driverName[driverIdx];
+  let chineseName = driverChineseName[driverIdx];
+  let phone = phoneNumber[driverIdx];
+  let department = "运输部";
+  let updateDate = date[Math.floor(Math.random() * date.length)];
+  let logisticsId = long[Math.floor(Math.random() * long.length)];
+  let latitude = "中途定位";
+
+  let args = {
+    chaincodeFunction: "createTransport",
+    invokerIdentity: "peer0.org1.trace.com",
+    chaincodeArguments: [
+      randId,
+      randId,
+      name,
+      chineseName,
+      phone,
+      department,
+      updateDate,
+      "",
+      logisticsId,
+      latitude,
+    ],
+    timeout: 30,
+  };
+
+  return bc.invokeSmartContract(contx, "drivercc", "1.0", args, 30);
+};
+
+module.exports.end = async () => {
+  // Noop
+  logger.debug("Disposed of workload module");
+};
