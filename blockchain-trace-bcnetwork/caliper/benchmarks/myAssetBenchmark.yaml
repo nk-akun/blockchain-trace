@@ -12,10 +12,11 @@ test:
         type: fixed-load
         opts:
           tps: 50
-      workload:
-        module: workload/createTransport.js
-        arguments:
-          contractId: drivercc
+      callback: workload/createTransport.js
+      # workload:
+      #   module: workload/createTransport.js
+      #   arguments:
+      #     contractId: drivercc
 
 monitors:
   resource:
