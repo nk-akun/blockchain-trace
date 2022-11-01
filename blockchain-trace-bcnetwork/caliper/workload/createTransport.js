@@ -88,7 +88,6 @@ class CreateSubsidyWorkload extends WorkloadModuleBase {
       contractFunction: "createTransport",
       invokerIdentity: "peer0.org1.trace.com",
       invokerMspId: "Org1MSP",
-      targetPeers: "peer0.org1.trace.com",
       contractArguments: [
         randId,
         randId,
