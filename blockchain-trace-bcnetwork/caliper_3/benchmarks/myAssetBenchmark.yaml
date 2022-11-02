@@ -13,10 +13,6 @@ test:
         opts:
           tps: 50
       callback: workload/createTransport.js
-      # workload:
-      #   module: workload/createTransport.js
-      #   arguments:
-      #     contractId: drivercc
 
 monitors:
   resource:
