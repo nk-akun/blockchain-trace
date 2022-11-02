@@ -5,14 +5,14 @@ test:
     type: local
     number: 5
   rounds:
-    - label: queryTransportById
-      description: query transport by id
+    - label: createTransport
+      description: create transport
       txNumber: 1000
       rateControl:
         type: fixed-rate
         opts:
           tps: 50
-      callback: workload/queryTransportById.js
+      callback: workload/createTransport.js
 
 monitors:
   resource:
