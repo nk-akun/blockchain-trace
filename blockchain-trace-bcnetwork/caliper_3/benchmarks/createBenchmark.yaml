@@ -1,0 +1,23 @@
+test:
+  name: drivercc-benchmark
+  description: amops benchmark
+  workers:
+    type: local
+    number: 5
+  rounds:
+    - label: queryTransportById
+      description: query transport by id
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 50
+      callback: workload/queryTransportById.js
+
+monitors:
+  resource:
+    - module: docker
+      options:
+        interval: 5
+        containers:
+          - all
