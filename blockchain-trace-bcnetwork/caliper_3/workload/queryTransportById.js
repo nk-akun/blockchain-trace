@@ -37,7 +37,7 @@ module.exports.run = async () => {
     timeout: 30,
   };
 
-  return bc.invokeSmartContract(contx, "drivercc", "1.0", args, 30);
+  return bc.querySmartContract(contx, "drivercc", "1.0", args, 30);
 };
 
 module.exports.end = async () => {
