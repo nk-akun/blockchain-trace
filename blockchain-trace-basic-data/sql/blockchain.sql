@@ -1076,13 +1076,13 @@ INSERT INTO `sys_menu` VALUES (1057, '生成删除', 114, 3, '#', '', 1, 0, 'F',
 INSERT INTO `sys_menu` VALUES (1058, '导入代码', 114, 2, '#', '', 1, 0, 'F', '0', '0', 'tool:gen:import', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
 INSERT INTO `sys_menu` VALUES (1059, '预览代码', 114, 4, '#', '', 1, 0, 'F', '0', '0', 'tool:gen:preview', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
 INSERT INTO `sys_menu` VALUES (1060, '生成代码', 114, 5, '#', '', 1, 0, 'F', '0', '0', 'tool:gen:code', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (2000, '农户管理', 0, 4, 'farmer', NULL, 1, 0, 'M', '0', '0', NULL, 'build', 'admin', '2020-10-23 15:30:04', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2001, '农作物管理', 2000, 1, 'crops/index', 'trace/farmer/index', 1, 0, 'C', '0', '0', 'farmer:crops:list', 'guide', 'admin', '2020-10-23 15:32:44', 'admin', '2020-10-24 08:37:03', '');
+INSERT INTO `sys_menu` VALUES (2000, '供应商管理', 0, 4, 'farmer', NULL, 1, 0, 'M', '0', '0', NULL, 'build', 'admin', '2020-10-23 15:30:04', '', NULL, '');
+INSERT INTO `sys_menu` VALUES (2001, '原材料管理', 2000, 1, 'crops/index', 'trace/farmer/index', 1, 0, 'C', '0', '0', 'farmer:crops:list', 'guide', 'admin', '2020-10-23 15:32:44', 'admin', '2020-10-24 08:37:03', '');
 INSERT INTO `sys_menu` VALUES (2002, '区块链浏览器', 0, 6, 'block/index', 'blockExplorer/index', 1, 0, 'C', '0', '0', 'block:index', 'documentation', 'admin', '2020-10-24 09:23:29', 'admin', '2020-10-24 09:25:21', '');
 INSERT INTO `sys_menu` VALUES (2003, '物流管理', 0, 7, 'trace', NULL, 1, 0, 'M', '0', '0', '', 'drag', 'admin', '2020-11-03 06:24:49', 'admin', '2020-11-03 06:26:25', '');
 INSERT INTO `sys_menu` VALUES (2004, '物流管理', 2003, 1, 'driver', 'trace/driver/index', 1, 0, 'C', '0', '0', 'trace:driver:list', 'druid', 'admin', '2020-11-03 06:25:48', 'admin', '2020-11-03 06:26:39', '');
-INSERT INTO `sys_menu` VALUES (2005, '原料厂商管理', 0, 7, 'material', NULL, 1, 0, 'M', '0', '0', NULL, 'checkbox', 'admin', '2020-11-07 08:22:36', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2006, '原料管理', 2005, 1, 'material', 'trace/material/index', 1, 0, 'C', '0', '0', 'maching:index', 'date', 'admin', '2020-11-07 08:25:07', 'admin', '2020-11-07 08:26:33', '');
+INSERT INTO `sys_menu` VALUES (2005, '仓储管理', 0, 7, 'material', NULL, 1, 0, 'M', '0', '0', NULL, 'checkbox', 'admin', '2020-11-07 08:22:36', '', NULL, '');
+INSERT INTO `sys_menu` VALUES (2006, '仓储信息', 2005, 1, 'material', 'trace/material/index', 1, 0, 'C', '0', '0', 'maching:index', 'date', 'admin', '2020-11-07 08:25:07', 'admin', '2020-11-07 08:26:33', '');
 INSERT INTO `sys_menu` VALUES (2007, '生产厂商', 0, 8, 'product', NULL, 1, 0, 'M', '0', '0', NULL, 'post', 'admin', '2020-11-08 02:26:55', '', NULL, '');
 INSERT INTO `sys_menu` VALUES (2008, '产品加工', 2007, 1, 'maching', 'trace/product/index', 1, 0, 'C', '0', '0', 'pro:list', 'clipboard', 'admin', '2020-11-08 02:28:20', '', NULL, '');
 INSERT INTO `sys_menu` VALUES (2009, '工作记录', 2007, 2, 'record', 'trace/product/record', 1, 0, 'C', '0', '0', 'record:list', 'edit', 'admin', '2020-11-09 14:10:35', '', NULL, '');
