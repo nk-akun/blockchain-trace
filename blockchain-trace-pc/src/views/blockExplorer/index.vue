@@ -80,8 +80,8 @@
 					节点<br><br>
 				证书节点:<el-tag type="danger">ca.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>	
 				共识节点:<el-tag type="warning">orderer.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
-				农户节点:<el-tag>peer0.org1.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
-				原料厂商节点:<el-tag>peer0.org2.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
+				供应商节点:<el-tag>peer0.org1.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
+				仓储厂商节点:<el-tag>peer0.org2.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
 				生产厂商节点:<el-tag>peer0.org3.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
 				零售商节点:<el-tag>peer0.org4.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
 				物流公司节点:<el-tag>peer0.org5.trace.com</el-tag>&nbsp;&nbsp;&nbsp;<br><br>
