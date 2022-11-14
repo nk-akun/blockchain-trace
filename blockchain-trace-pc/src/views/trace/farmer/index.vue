@@ -13,7 +13,7 @@
       <el-table-column label="原材料名称" prop="cropsName" />
       <el-table-column label="状态" prop="status">
         <template slot-scope="scope">
-          <el-tag v-if="scope.row.status === 0">种植中</el-tag>
+          <el-tag v-if="scope.row.status === 0">加工中</el-tag>
           <el-tag type="danger" v-if="scope.row.status === 1">已出售</el-tag>
         </template>
       </el-table-column>
@@ -111,12 +111,12 @@
       <el-form ref="form" :model="form" :rules="rules" label-width="80px">
         <el-row>
           <el-col :span="12">
-            <el-form-item label="作物名称" prop="nickName">
-              <el-input v-model="form.cropsName" placeholder="请输入作物名称" />
+            <el-form-item label="原材料名称" prop="nickName">
+              <el-input v-model="form.cropsName" placeholder="请输入原材料名称" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="作物类型" prop="nickName">
+            <el-form-item label="原材料类型" prop="nickName">
               <el-select v-model="form.cropsType" placeholder="请选择">
                 <el-option
                   v-for="dict in cropsTypeOptions"
@@ -130,12 +130,12 @@
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="肥料名称" prop="nickName">
-              <el-input v-model="form.fertilizerName" placeholder="请输入肥料名称" />
+            <el-form-item label="添加剂详情" prop="nickName">
+              <el-input v-model="form.fertilizerName" placeholder="请输入添加剂名称" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="种植方式" prop="nickName">
+            <el-form-item label="采集方式" prop="nickName">
               <el-select v-model="form.plantMode" placeholder="请选择">
                 <el-option
                   v-for="dict in plantModeOptions"
@@ -149,12 +149,12 @@
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="种植年度" prop="nickName">
-              <el-input v-model="form.year" placeholder="请输入种植年度" />
+            <el-form-item label="生产年份" prop="nickName">
+              <el-input v-model="form.year" placeholder="请输入生产年份" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="是否套袋" prop="nickName">
+            <el-form-item label="是否危险品" prop="nickName">
               <el-select v-model="form.baggingStatus" placeholder="请选择">
                 <el-option
                   v-for="dict in beggingOptions"
@@ -168,25 +168,25 @@
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="育苗周期" prop="nickName">
-              <el-input v-model="form.growSeedlingsCycle" placeholder="请输入育苗周期" />
+            <el-form-item label="质量标准" prop="nickName">
+              <el-input v-model="form.growSeedlingsCycle" placeholder="请输入质量标准" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="灌溉周期" prop="nickName">
-              <el-input v-model="form.irrigationCycle" placeholder="请输入灌溉周期" />
+            <el-form-item label="处理步骤" prop="nickName">
+              <el-input v-model="form.irrigationCycle" placeholder="请输入处理步骤" />
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="施肥周期" prop="nickName">
-              <el-input v-model="form.applyFertilizerCycle" placeholder="请输入施肥周期" />
+            <el-form-item label="物态状态" prop="nickName">
+              <el-input v-model="form.applyFertilizerCycle" placeholder="请输入物态状态" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="除草周期" prop="nickName">
-              <el-input v-model="form.weedCycle" placeholder="请输入除草周期" />
+            <el-form-item label="贮藏条件" prop="nickName">
+              <el-input v-model="form.weedCycle" placeholder="请输入贮藏条件" />
             </el-form-item>
           </el-col>
         </el-row>
@@ -197,7 +197,7 @@
             </el-form-item>
           </el-col>
         </el-row>
-        <el-form-item label="备注">
+        <el-form-item label="其他信息">
           <el-input v-model="form.remarks" type="textarea" placeholder="请输入内容"></el-input>
         </el-form-item>
       </el-form>
@@ -210,48 +210,48 @@
     <!-- 作物详情 -->
     <el-dialog
       center
-      title="农作物链上数据详情"
+      title="原材料链上数据详情"
       :visible.sync="cropsDetaiDialog"
       width="700px"
       append-to-body
     >
       <el-row>
-        <el-col :span="12">农作物ID：{{ cropsDetails.crops_id }}</el-col>
-        <el-col :span="12">农作物名称：{{ cropsDetails.crops_name }}</el-col>
+        <el-col :span="12">原材料ID：{{ cropsDetails.crops_id }}</el-col>
+        <el-col :span="12">原材料名称：{{ cropsDetails.crops_name }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
         <el-col :span="12">地址：{{ cropsDetails.address }}</el-col>
-        <el-col :span="12">农户：{{ cropsDetails.farmer_name }}</el-col>
+        <el-col :span="12">厂商：{{ cropsDetails.farmer_name }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">施肥情况：{{ cropsDetails.apply_fertilizer_cycle }}</el-col>
-        <el-col :span="12">种植方式：{{ cropsDetails.plant_mode }}</el-col>
+        <el-col :span="12">保质期：{{ cropsDetails.apply_fertilizer_cycle }}</el-col>
+        <el-col :span="12">采集方式：{{ cropsDetails.plant_mode }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">肥料名称：{{ cropsDetails.fertilizer_name }}</el-col>
-        <el-col :span="12">是否套袋种植：{{ cropsDetails.bagging_status }}</el-col>
+        <el-col :span="12">添加剂详情：{{ cropsDetails.fertilizer_name }}</el-col>
+        <el-col :span="12">是否危险品：{{ cropsDetails.bagging_status }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">农户电话：{{ cropsDetails.farmer_tel }}</el-col>
-        <el-col :span="12">种植年度：{{ cropsDetails.year }}</el-col>
+        <el-col :span="12">供应商电话：{{ cropsDetails.farmer_tel }}</el-col>
+        <el-col :span="12">生产年份：{{ cropsDetails.year }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">育苗周期：{{ cropsDetails.grow_seedlings_cycle }}</el-col>
-        <el-col :span="12">灌溉周期：{{ cropsDetails.irrigation_cycle }}</el-col>
+        <el-col :span="12">质量标准：{{ cropsDetails.grow_seedlings_cycle }}</el-col>
+        <el-col :span="12">处理步骤：{{ cropsDetails.irrigation_cycle }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">除草周期：{{ cropsDetails.weed_cycle }}</el-col>
+        <el-col :span="12">贮藏条件：{{ cropsDetails.weed_cycle }}</el-col>
         <el-col :span="12">登记时间：{{ cropsDetails.register_time }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">备注：{{ cropsDetails.remarks }}</el-col>
+        <el-col :span="12">其他信息：{{ cropsDetails.remarks }}</el-col>
       </el-row>
     </el-dialog>
 
