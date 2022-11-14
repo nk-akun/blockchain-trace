@@ -111,12 +111,12 @@
       <el-form ref="form" :model="form" :rules="rules" label-width="80px">
         <el-row>
           <el-col :span="12">
-            <el-form-item label="原材料名称" prop="nickName">
+            <el-form-item label="原料名称" prop="nickName">
               <el-input v-model="form.cropsName" placeholder="请输入原材料名称" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="原材料类型" prop="nickName">
+            <el-form-item label="原料类型" prop="nickName">
               <el-select v-model="form.cropsType" placeholder="请选择">
                 <el-option
                   v-for="dict in cropsTypeOptions"
@@ -130,7 +130,7 @@
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="添加剂详情" prop="nickName">
+            <el-form-item label="添加剂" prop="nickName">
               <el-input v-model="form.fertilizerName" placeholder="请输入添加剂名称" />
             </el-form-item>
           </el-col>
@@ -154,7 +154,7 @@
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="是否危险品" prop="nickName">
+            <el-form-item label="危险品" prop="nickName">
               <el-select v-model="form.baggingStatus" placeholder="请选择">
                 <el-option
                   v-for="dict in beggingOptions"
@@ -811,7 +811,7 @@ export default {
       this.reset();
       this.getMenuTreeselect();
       this.open = true;
-      this.title = '记录作物';
+      this.title = '记录原材料';
     },
     /** 修改按钮操作 */
     handleUpdate(row) {
