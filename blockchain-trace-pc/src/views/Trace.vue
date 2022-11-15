@@ -238,7 +238,7 @@
                     <el-col :span="12">
                       <img
                         style="width: 100%;height: 21.05rem;"
-                        :src="https://www.iiifs.com/wp-content/uploads/2018/01/2018010815353713-768x1056.jpeg"
+                        src="https://www.iiifs.com/wp-content/uploads/2018/01/2018010815353713-768x1056.jpeg"
                       />
                     </el-col>
                   </el-card>
