@@ -1,7 +1,7 @@
 {
   "name": "ruoyi",
   "version": "3.1.0",
-  "description": "区块链的农产品溯源平台",
+  "description": "区块链的商品溯源平台",
   "author": "若依",
   "license": "MIT",
   "scripts": {

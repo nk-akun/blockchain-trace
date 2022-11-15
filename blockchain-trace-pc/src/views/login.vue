@@ -29,7 +29,7 @@
           <svg-icon slot="prefix" icon-class="validCode" class="el-input__icon input-icon" />
         </el-input>
         <div class="login-code">
-          <img :src="codeUrl" @click="getCode" class="login-code-img"/>
+          <img :src="codeUrl" @click="getCode" class="login-code-img" />
         </div>
       </el-form-item>
       <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox>
@@ -46,116 +46,103 @@
         </el-button>
       </el-form-item>
       <el-form-item style="width:100%;">
-        <el-button
-          size="medium"
-          type="success"
-          style="width:100%;"
-          @click.native.prevent="roTrace"
-        >
-          <span >消费者溯源</span>
+        <el-button size="medium" type="success" style="width:100%;" @click.native.prevent="roTrace">
+          <span>消费者溯源</span>
         </el-button>
       </el-form-item>
     </el-form>
     <!--  底部  -->
 
-    <el-dialog
-      title="农产品溯源"
-      :visible.sync="drawer"
-      width="95%">
-      <el-divider content-position="left">农产品溯源</el-divider>
+    <el-dialog title="商品溯源" :visible.sync="drawer" width="95%">
+      <el-divider content-position="left">商品溯源</el-divider>
       <div>
         <Trace></Trace>
       </div>
-
     </el-dialog>
   </div>
 </template>
 
 <script>
-import { getCodeImg } from "@/api/login";
-import Cookies from "js-cookie";
-import { encrypt, decrypt } from '@/utils/jsencrypt'
-import Trace from './Trace.vue'
+import { getCodeImg } from '@/api/login';
+import Cookies from 'js-cookie';
+import { encrypt, decrypt } from '@/utils/jsencrypt';
+import Trace from './Trace.vue';
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     return {
-      codeUrl: "",
-      cookiePassword: "",
+      codeUrl: '',
+      cookiePassword: '',
       loginForm: {
-        username: "admin",
-        password: "admin123",
+        username: 'admin',
+        password: 'admin123',
         rememberMe: false,
-        code: "",
-        uuid: ""
+        code: '',
+        uuid: '',
       },
       loginRules: {
-        username: [
-          { required: true, trigger: "blur", message: "用户名不能为空" }
-        ],
-        password: [
-          { required: true, trigger: "blur", message: "密码不能为空" }
-        ],
-        code: [{ required: true, trigger: "change", message: "验证码不能为空" }]
+        username: [{ required: true, trigger: 'blur', message: '用户名不能为空' }],
+        password: [{ required: true, trigger: 'blur', message: '密码不能为空' }],
+        code: [{ required: true, trigger: 'change', message: '验证码不能为空' }],
       },
       loading: false,
       redirect: undefined,
-      drawer:false,
+      drawer: false,
     };
   },
-  components:{
-    Trace
+  components: {
+    Trace,
   },
   watch: {
     $route: {
-      handler: function(route) {
+      handler: function (route) {
         this.redirect = route.query && route.query.redirect;
       },
-      immediate: true
-    }
+      immediate: true,
+    },
   },
   created() {
     this.getCode();
     this.getCookie();
   },
   methods: {
-    roTrace(){
-      this.drawer = true
+    roTrace() {
+      this.drawer = true;
     },
 
     getCode() {
-      getCodeImg().then(res => {
-        this.codeUrl = "data:image/gif;base64," + res.img;
+      getCodeImg().then((res) => {
+        this.codeUrl = 'data:image/gif;base64,' + res.img;
         this.loginForm.uuid = res.uuid;
       });
     },
     getCookie() {
-      const username = Cookies.get("username");
-      const password = Cookies.get("password");
-      const rememberMe = Cookies.get('rememberMe')
+      const username = Cookies.get('username');
+      const password = Cookies.get('password');
+      const rememberMe = Cookies.get('rememberMe');
       this.loginForm = {
         username: username === undefined ? this.loginForm.username : username,
         password: password === undefined ? this.loginForm.password : decrypt(password),
-        rememberMe: rememberMe === undefined ? false : Boolean(rememberMe)
+        rememberMe: rememberMe === undefined ? false : Boolean(rememberMe),
       };
     },
     handleLogin() {
-      this.$refs.loginForm.validate(valid => {
+      this.$refs.loginForm.validate((valid) => {
         if (valid) {
           this.loading = true;
           if (this.loginForm.rememberMe) {
-            Cookies.set("username", this.loginForm.username, { expires: 30 });
-            Cookies.set("password", encrypt(this.loginForm.password), { expires: 30 });
+            Cookies.set('username', this.loginForm.username, { expires: 30 });
+            Cookies.set('password', encrypt(this.loginForm.password), { expires: 30 });
             Cookies.set('rememberMe', this.loginForm.rememberMe, { expires: 30 });
           } else {
-            Cookies.remove("username");
-            Cookies.remove("password");
+            Cookies.remove('username');
+            Cookies.remove('password');
             Cookies.remove('rememberMe');
           }
           this.$store
-            .dispatch("Login", this.loginForm)
+            .dispatch('Login', this.loginForm)
             .then(() => {
-              this.$router.push({ path: this.redirect || "/" });
+              this.$router.push({ path: this.redirect || '/' });
             })
             .catch(() => {
               this.loading = false;
@@ -163,8 +150,8 @@ export default {
             });
         }
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -174,7 +161,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../assets/image/login-background.jpg");
+  background-image: url('../assets/image/login-background.jpg');
   background-size: cover;
 }
 .title {
