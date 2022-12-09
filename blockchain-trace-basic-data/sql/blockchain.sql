@@ -444,10 +444,10 @@ INSERT INTO `sys_dict_data` VALUES (25, 8, '生成代码', '8', 'sys_oper_type',
 INSERT INTO `sys_dict_data` VALUES (26, 9, '清空数据', '9', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '清空操作');
 INSERT INTO `sys_dict_data` VALUES (27, 1, '成功', '0', 'sys_common_status', '', 'primary', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态');
 INSERT INTO `sys_dict_data` VALUES (28, 2, '失败', '1', 'sys_common_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态');
-INSERT INTO `sys_dict_data` VALUES (100, 1, '大棚种植', '大棚种植', 'crops_plant_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:40:28', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (101, 2, '露天种植', '露天种植', 'crops_plant_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:40:46', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (102, 1, '套袋', '套袋', 'crops_bagging', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:42:29', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (103, 2, '不套袋', '不套袋', 'crops_bagging', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:42:41', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (100, 1, '机器采集', '机器采集', 'crops_plant_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:40:28', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (101, 2, '人工采集', '人工采集', 'crops_plant_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:40:46', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (102, 1, '是', '是', 'crops_bagging', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:42:29', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (103, 2, '否', '否', 'crops_bagging', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:42:41', '', NULL, NULL);
 INSERT INTO `sys_dict_data` VALUES (104, 1, '粮食作物', '粮食作物', 'crops_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:45:04', '', NULL, NULL);
 INSERT INTO `sys_dict_data` VALUES (105, 1, '经济作物', '经济作物', 'crops_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:45:21', '', NULL, NULL);
 INSERT INTO `sys_dict_data` VALUES (106, 3, '蔬菜作物', '蔬菜作物', 'crops_type', NULL, NULL, 'N', '0', 'admin', '2020-10-24 08:45:40', '', NULL, NULL);
