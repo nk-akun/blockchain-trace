@@ -24,7 +24,7 @@
             size="mini"
             type="text"
             @click="handleRecord(scope.row)"
-          >周期记录</el-button>
+          >过程记录</el-button>
           <el-button size="mini" type="text" @click="cropsDetail(scope.row)">原材料详情</el-button>
           <el-button size="mini" type="text" @click="cropsProcessDetail(scope.row)">过程详情</el-button>
           <el-button
@@ -46,8 +46,8 @@
       @pagination="getList"
     />
 
-    <!-- 记录作物生长 -->
-    <el-dialog center title="记录作物生长情况" :visible.sync="growDialog" width="700px" append-to-body>
+    <!-- 记录操作过程 -->
+    <el-dialog center title="记录操作过程" :visible.sync="growDialog" width="700px" append-to-body>
       <el-form ref="form" label-width="80px" :model="recordForm">
         <el-row>
           <el-col :span="24" align="center">{{ cropsName }}</el-col>
@@ -55,38 +55,38 @@
         <el-divider></el-divider>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="温度" prop="nickName">
-              <el-input v-model="recordForm.temperature" placeholder="请输入温度" />
+            <el-form-item label="操作名称" prop="nickName">
+              <el-input v-model="recordForm.temperature" placeholder="请输入操作名称" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="生长情况" prop="nickName">
-              <el-input v-model="recordForm.growStatus" placeholder="请输入生长情况" />
-            </el-form-item>
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-col :span="12">
-            <el-form-item label="水分" prop="nickName">
-              <el-input v-model="recordForm.waterContent" placeholder="请输入水分" />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="光照情况" prop="nickName">
-              <el-input v-model="recordForm.illuminationStatus" placeholder="请输入光照情况" />
+            <el-form-item label="工艺种类" prop="nickName">
+              <el-input v-model="recordForm.growStatus" placeholder="请输入工艺种类" />
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="备注" prop="nickName">
-              <el-input v-model="recordForm.remarks" type="textarea" placeholder="请输入内容"></el-input>
+            <el-form-item label="过程时长" prop="nickName">
+              <el-input v-model="recordForm.waterContent" placeholder="请输入过程时长" />
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="加工条件" prop="nickName">
+              <el-input v-model="recordForm.illuminationStatus" placeholder="请输入加工条件" />
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="生长图片:">
+            <el-form-item label="操作详情" prop="nickName">
+              <el-input v-model="recordForm.remarks" type="textarea" placeholder="请输入操作详情"></el-input>
+            </el-form-item>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="12">
+            <el-form-item label="操作现场图:">
               <el-upload
                 class="avatar-uploader"
                 :on-change="getFile"
@@ -262,16 +262,16 @@
       :show-close="false"
       :with-header="false"
     >
-      <el-divider content-position="left">农作物链上过程详情</el-divider>
+      <el-divider content-position="left">原材料链上过程详情</el-divider>
       <el-table v-loading="loading" :data="cropsProcessDetailsArray">
         <el-table-column label="过程ID" prop="crops_grow_id" />
-        <el-table-column label="作物ID" prop="crops_bak_id" />
-        <el-table-column label="生长状态" prop="grow_status" />
-        <el-table-column label="光照情况" prop="illumination_status" />
+        <el-table-column label="原材料ID" prop="crops_bak_id" />
+        <el-table-column label="操作名称" prop="temperature" />
+        <el-table-column label="工艺种类" prop="grow_status" />
+        <el-table-column label="过程时长" prop="water_content" />
+        <el-table-column label="操作条件" prop="illumination_status" />
         <el-table-column label="记录时间" prop="record_time" />
-        <el-table-column label="温度" prop="temperature" />
-        <el-table-column label="水分状态" prop="water_content" />
-        <el-table-column label="备注" prop="remarks" />
+        <el-table-column label="操作详情" prop="remarks" />
         <el-table-column label="图片" class="demo-image__preview">
           <template slot-scope="scope">
             <el-image
