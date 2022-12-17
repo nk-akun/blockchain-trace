@@ -86,7 +86,7 @@
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="操作现场图:">
+            <el-form-item label="操作图:">
               <el-upload
                 class="avatar-uploader"
                 :on-change="getFile"
