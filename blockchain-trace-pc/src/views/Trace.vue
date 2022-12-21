@@ -113,7 +113,7 @@
                 <el-form-item>
                   <span style="color: #13CE66;">产品基本信息</span>
                 </el-form-item>
-                <el-form-item label="生产厂商负:">{{ productData.factory }}</el-form-item>
+                <el-form-item label="生产厂商:">{{ productData.factory }}</el-form-item>
                 <el-form-item label="生产厂商负责人:">{{ productData.leader }}</el-form-item>
                 <el-form-item label="电话:">{{ productData.leader_tel }}</el-form-item>
                 <el-form-item label="含量描述:">{{ productData.Net_Content }}</el-form-item>
@@ -148,27 +148,27 @@
                       <el-card style="border-color: #42b983;">
                         <el-col :span="12">
                           <el-row>
-                            <el-col :span="24">生长情况：{{ info.grow_status }}</el-col>
+                            <el-col :span="24">操作名称：{{ info.temperature }}</el-col>
+                          </el-row>
+                          <el-row>
+                            <el-col :span="24">工艺种类：{{ info.grow_status }}</el-col>
                           </el-row>
                           <br />
                           <el-row>
-                            <el-col :span="24">光照情况：{{ info.illumination_status }}</el-col>
+                            <el-col :span="24">操作条件：{{ info.illumination_status }}</el-col>
                           </el-row>
                           <br />
                           <el-row>
-                            <el-col :span="24">水分：{{ info.water_content }}</el-col>
+                            <el-col :span="24">过程时长：{{ info.water_content }}</el-col>
                           </el-row>
                           <br />
-                          <el-row>
-                            <el-col :span="24">温度：{{ info.temperature }}</el-col>
-                          </el-row>
                           <br />
                           <el-row>
                             <el-col :span="24">记录时间：{{ info.record_time }}</el-col>
                           </el-row>
                           <br />
                           <el-row>
-                            <el-col :span="24">备注：{{ info.remarks }}</el-col>
+                            <el-col :span="24">操作详情：{{ info.remarks }}</el-col>
                           </el-row>
                         </el-col>
                         <el-col :span="12">
