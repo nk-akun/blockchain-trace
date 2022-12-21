@@ -12,11 +12,11 @@
     <i-input :value="productData.factory" title="生产厂商" disabled />
     <i-input :value="productData.leader" title="生产厂商负责人" disabled />
     <i-input :value="productData.leader_tel" title="生产厂商负责人电话" disabled />
-    <i-input :value="productData.Net_Content" title="净含量" disabled />
+    <i-input :value="productData.Net_Content" title="含量描述" disabled />
     <i-input :value="productData.workshop" title="生产车间" disabled />
     <i-input :value="productData.work_hours" title="生产工时" disabled />
     <i-input :value="productData.keep_mathod" title="保存方法" disabled />
-    <i-input :value="productData.cooking_recommend" title="食用推荐" disabled />
+    <i-input :value="productData.cooking_recommend" title="工序清单" disabled />
     <i-input :value="productData.remarks" title="备注" disabled />
 
     <i-divider color="#2d8cf0" lineColor="#2d8cf0">溯源更多信息</i-divider>

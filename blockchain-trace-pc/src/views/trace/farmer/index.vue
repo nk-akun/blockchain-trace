@@ -302,7 +302,7 @@
         </el-row>
         <el-row>
           <el-col :span="24">
-            <el-form-item label="原料厂商" prop="nickName">
+            <el-form-item label="仓储厂商" prop="nickName">
               <el-select v-model="trasportForm.deptId" placeholder="请选择">
                 <el-option
                   v-for="dept in factoryList"

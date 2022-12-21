@@ -7,7 +7,7 @@
       <el-table-column label="id" prop="id" />
       <el-table-column label="原材料编号" prop="cropsId" />
       <el-table-column label="仓储厂商" prop="farmerDept" />
-      <el-table-column label="作物名称" prop="cropsName" />
+      <el-table-column label="原料名称" prop="cropsName" />
       <el-table-column label="仓储厂商负责人" prop="farmerNickName" />
       <el-table-column label="加工状态" prop="maching">
         <template slot-scope="scope">
@@ -129,12 +129,12 @@
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="净含量" prop="nickName">
+            <el-form-item label="含量描述" prop="nickName">
               <el-input v-model="recordForm.NetContent" placeholder="请输入" />
             </el-form-item>
           </el-col>
         </el-row>
-        <el-form-item label="食用推荐">
+        <el-form-item label="工序清单">
           <el-input v-model="recordForm.CookingRecommend" type="textarea" placeholder="请输入内容"></el-input>
         </el-form-item>
         <el-form-item label="备注">
@@ -169,7 +169,7 @@
 
     <el-dialog center title="产品基本信息" :visible.sync="productInfoDialog" width="700px" append-to-body>
       <el-row>
-        <el-col :span="24">作物ID：{{ productInfos.crops_id }}</el-col>
+        <el-col :span="24">原材料ID：{{ productInfos.crops_id }}</el-col>
       </el-row>
       <el-divider></el-divider>
       <el-row>
@@ -178,7 +178,7 @@
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">净含量：{{ productInfos.Net_Content }}</el-col>
+        <el-col :span="12">含量描述：{{ productInfos.Net_Content }}</el-col>
         <el-col :span="12">保存方式：{{ productInfos.keep_mathod }}</el-col>
       </el-row>
       <el-divider></el-divider>
@@ -198,7 +198,7 @@
       </el-row>
       <el-divider></el-divider>
       <el-row>
-        <el-col :span="12">食用推荐：{{ productInfos.cooking_recommend }}</el-col>
+        <el-col :span="12">工序清单：{{ productInfos.cooking_recommend }}</el-col>
         <el-col :span="12">备注：{{ productInfos.remarks }}</el-col>
       </el-row>
     </el-dialog>

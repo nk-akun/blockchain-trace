@@ -116,11 +116,11 @@
                 <el-form-item label="生产厂商负:">{{ productData.factory }}</el-form-item>
                 <el-form-item label="生产厂商负责人:">{{ productData.leader }}</el-form-item>
                 <el-form-item label="电话:">{{ productData.leader_tel }}</el-form-item>
-                <el-form-item label="净含量:">{{ productData.Net_Content }}</el-form-item>
+                <el-form-item label="含量描述:">{{ productData.Net_Content }}</el-form-item>
                 <el-form-item label="生产车间:">{{ productData.workshop }}</el-form-item>
                 <el-form-item label="生产工时">{{ productData.work_hours }}</el-form-item>
                 <el-form-item label="保存方法">{{ productData.keep_mathod }}</el-form-item>
-                <el-form-item label="食用推荐">{{ productData.cooking_recommend }}</el-form-item>
+                <el-form-item label="工序清单">{{ productData.cooking_recommend }}</el-form-item>
               </el-form>
             </el-col>
             <el-col :span="6">
