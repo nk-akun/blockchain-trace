@@ -122,7 +122,7 @@
           <i-input :value="machingInfo.leader_tel" title="电话" disabled />
         </view>
         <view slot="footer">
-          <i-input :value="machingInfo.factory_name" title="原料厂商" disabled />
+          <i-input :value="machingInfo.factory_name" title="仓储厂商" disabled />
         </view>
         <view slot="footer">
           <i-input :value="machingInfo.in_factory_time" title="入厂时间" disabled />
