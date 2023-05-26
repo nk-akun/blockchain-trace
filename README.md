@@ -5,15 +5,11 @@
 基于区块链的溯源系统，分为 pc 端，h5 端，后台采用 SpringBoot，前端 Vue，
 区块链网络采用 Fabric，一共分为六个组织节点，农户，原料厂商，生产厂商，物流厂商，零售商，消费者
 
-若有疑问，可关注公众号获取联系方法，点击联系作者，消息回晚了别在意，都会回复的(出怎么安装 mysql，redis，数据库怎么连不上，redis 怎么连不上等问题)，感谢您的支持。
-
 # 软件架构
 
 此系统有四个模块， blockchain-trace-bcnetwork ，blockchain-trace-applets ，blockchain-trace-pc ，blockchain-trace-basic-data。
 
     blockchain-trace-bcnetwork：区块链网络，可直接将文件上传至服务器，然后启动里面的脚本
-
-    blockchain-trace-applets：小程序端溯源，做得十分简单
 
     blockchain-trace-pc：PC端,使用的是RuoYi-Vue
 
